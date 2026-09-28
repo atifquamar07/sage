@@ -1,0 +1,9 @@
+# Qwen2.5-1.5B-Instruct, the main backbone. Serve with scripts/serve_vllm.sh.
+name: qwen2.5-1.5b-instruct
+hf_repo: Qwen/Qwen2.5-1.5B-Instruct
+hf_revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+endpoints: [http://127.0.0.1:8000/v1]
+max_tokens: 2048
+timeout: 1200
+max_concurrency: 128
+sampling: {top_p: 0.8, top_k: 20, repetition_penalty: 1.1}

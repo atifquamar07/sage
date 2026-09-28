@@ -1,0 +1,9 @@
+# Ministral-3-3B-Instruct-2512 (BF16). The paper served it with vLLM 0.13.0 (see docs/reproducing.md).
+name: ministral-3-3b-instruct-2512-bf16
+hf_repo: mistralai/Ministral-3-3B-Instruct-2512-BF16
+hf_revision: b6d637bef2393152b3da2b2fde72eecdee30557e
+endpoints: [http://127.0.0.1:8000/v1]
+max_tokens: 2048
+timeout: 1200
+max_concurrency: 128
+sampling: {top_p: 1.0, top_k: -1, repetition_penalty: 1.0}

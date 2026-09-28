@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use SAGE, please cite the paper."
+title: "SAGE: Self-Adapting Group of Experts for Multi-Agent Reasoning"
+type: software
+license: MIT
+version: 1.0.0
+preferred-citation:
+  type: conference-paper
+  title: "Self-Adapting Group of Experts for Multi-Agent Reasoning"
+  authors:
+    - name: "Anonymous"
+  year: 2027

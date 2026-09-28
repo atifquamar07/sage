@@ -1,0 +1,5 @@
+# Client packages in the environment that ran SAGE for the paper (Python 3.11).
+openai==3.8.0
+tenacity==9.1.4
+PyYAML==6.0.2
+datasets==5.0.1

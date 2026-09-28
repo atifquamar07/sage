@@ -1,0 +1,7 @@
+# xFinder answer extractor (κ during inference, and the first step of evaluation).
+name: xfinder-qwen1505
+hf_repo: IAAR-Shanghai/xFinder-qwen1505
+hf_revision: 74710b225ed6b7655701d0540d868edc5466e350
+endpoints: [http://127.0.0.1:8300/v1]
+max_tokens: 100
+timeout: 180

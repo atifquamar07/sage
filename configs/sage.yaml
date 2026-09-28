@@ -1,0 +1,33 @@
+# SAGE hyperparameters used in the paper (Appendix, Table 3).
+num_agents: 4                 # N: agents per question, roles sampled without replacement
+roles:                        # role pool (sage_mas/prompts/roles.py)
+  - WordProblemParser
+  - AlgebraicSolver
+  - ArithmeticCalculation
+  - DiscreteMath
+  - GeometryPrecalculus
+  - CompetitionMath
+  - MultipleChoiceStrategist
+  - BroadAcademicKnowledge
+  - SkepticalVerificationSolver
+backbones: null               # optional per-agent model names; null = every agent uses --model
+temperature: 0.5              # initial answers, reviews and revisions
+prefix:
+  tau: 0.6                    # τ: fraction of the response kept as the prefix
+  weight: 0.5                 # λ: weight of prefix consistency in the score ρ
+  temperature: 0.6
+review:
+  sample_size: 2              # m: agents sampled from each score group
+rewrite:
+  temperature: 0.2
+  max_attempts: 3
+  max_chars: 6000
+  min_chars: 80
+  materiality_threshold: 0.98
+routing:
+  top_k: 2                    # K: maximum parents per agent
+  max_rounds: 3               # T: maximum collaboration rounds
+vote:
+  leader_bonus: 0.5           # β: leader occurrences vote with weight 1 + β
+answer_extractor: xfinder     # xfinder (paper) or regex (no extra model server)
+max_workers: 8                # concurrent model calls within one question

@@ -1,0 +1,8 @@
+# Serving environment used in the paper for Ministral-3-3B-Instruct-2512 (BF16 checkpoint,
+# served with --dtype half and the native Mistral format; Python 3.11, CUDA 12.9).
+vllm==0.13.0
+torch==2.9.0
+transformers==4.57.3
+tokenizers==0.22.2
+mistral-common==1.11.7
+flashinfer-python==0.5.3

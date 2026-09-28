@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sage-mas"
+version = "1.0.0"
+description = "SAGE: Self-Adapting Group of Experts for multi-agent reasoning"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.40",
+    "tenacity>=8",
+    "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+data = ["datasets>=2.19"]          # scripts/fetch_gpqa.py
+dev = ["pytest>=7", "ruff>=0.5"]
+
+[project.scripts]
+sage-run = "sage_mas.run:main"
+sage-eval = "sage_mas.evaluate:main"
+sage-aggregate = "sage_mas.aggregate:main"
+
+[tool.setuptools.packages.find]
+include = ["sage_mas*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+# Greek letters from the paper (ρ, λ, τ) appear in docstrings and comments.
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+# Verbatim prompt texts keep their original line breaks.
+"sage_mas/prompts/*" = ["E501"]
+"sage_mas/third_party/*" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

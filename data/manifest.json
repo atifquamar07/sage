@@ -1,0 +1,121 @@
+{
+  "description": "SAGE evaluation sets. Rows are verbatim copies of the frozen paper-era files.",
+  "datasets": {
+    "gsm8k": {
+      "file": "gsm8k.json",
+      "rows": 500,
+      "sha256": "79e42b74340d1fe0dec46f722671ec9e7b33f3165644c9f0995c86af68161517",
+      "source": {
+        "dataset_name": "GSM8K_1000",
+        "source_dataset": "openai/gsm8k:main",
+        "source_split": "test",
+        "source_fingerprint": "59ec1b7f9357c7a2",
+        "seed": 2025,
+        "sample_count": 1000,
+        "dataset_adapter_version": "publication-dataset-v2",
+        "dataset_manifest_hash": "2c49361b6582f75e105b129f3cadbf76728546e0666775863800156e0bc6eec4"
+      },
+      "slice": [
+        0,
+        500
+      ]
+    },
+    "math": {
+      "file": "math.json",
+      "rows": 500,
+      "sha256": "03c4bbd6af6971f5c17880ccd8bf3eab68e003ff37f85a471c6e8bf6f9a6c30d",
+      "source": {
+        "dataset_name": "MATH_1000",
+        "source_dataset": "EleutherAI/hendrycks_math",
+        "source_split": "test",
+        "source_fingerprint": "0132904b03fe9c0d",
+        "seed": 2025,
+        "sample_count": 1000,
+        "dataset_adapter_version": "publication-dataset-v2",
+        "dataset_manifest_hash": "11d7897c5a82c54775fb07a75afb232bb3e7c33cd89fea17d4646446af66d623"
+      },
+      "slice": [
+        0,
+        500
+      ]
+    },
+    "aqua_rat": {
+      "file": "aqua_rat.json",
+      "rows": 500,
+      "sha256": "de4c19a794e4293cff6ab3801fdd4eb22cc229cd792052696ae6f6da17d609b2",
+      "source": {
+        "dataset_name": "AQUA_RAT_1000",
+        "source_dataset": "deepmind/aqua_rat:raw",
+        "source_split": "train",
+        "source_fingerprint": "28694781b9ebcde7",
+        "seed": 2025,
+        "sample_count": 1000,
+        "dataset_adapter_version": "publication-dataset-v2",
+        "dataset_manifest_hash": "1a1f514d3c19b73ba8e6824a1e8af13e76efde1040c43409cd3459d773dde500"
+      },
+      "slice": [
+        0,
+        500
+      ]
+    },
+    "gsm_hard": {
+      "file": "gsm_hard.json",
+      "rows": 500,
+      "sha256": "74d1dde62bf5c2349dc4b400a63241e8a88b7ff6b62a44e06144ecd8667b7b7b",
+      "source": {
+        "dataset_name": "GSM_HARD_1000",
+        "source_dataset": "reasoning-machines/gsm-hard",
+        "source_split": "train",
+        "source_fingerprint": "6427a7c6ccece0a6",
+        "seed": 2025,
+        "sample_count": 1000,
+        "dataset_adapter_version": "publication-dataset-v2",
+        "dataset_manifest_hash": "943e70dc3531b502dedcde04176e5c734c20dd03f11208379a53f8dc4f154e4b"
+      },
+      "slice": [
+        0,
+        500
+      ]
+    },
+    "mmlu": {
+      "file": "mmlu.json",
+      "rows": 500,
+      "sha256": "d363062c6ff10ccee3e4488fa0b43b3ecbb902cf04f2875f09e3cc0478854a5c",
+      "source": {
+        "dataset_name": "MMLU_1000",
+        "source_dataset": "cais/mmlu:all",
+        "source_split": "test",
+        "source_fingerprint": "436299c1c09696bb",
+        "seed": 2025,
+        "sample_count": 1000,
+        "dataset_adapter_version": "publication-dataset-v2",
+        "dataset_manifest_hash": "e42d0b40554371056d80567d8be7a6294a013165dcacc794ad428f9a04ae29d0"
+      },
+      "slice": [
+        0,
+        500
+      ]
+    },
+    "gpqa_diamond": {
+      "file": "gpqa_diamond.json",
+      "rows": 198,
+      "sha256": "e92d85046b92f8921ceafb4dfcad32ed306363e98ccb5e3e1cca0de657502540",
+      "fetched_by": "scripts/fetch_gpqa.py",
+      "hash_manifest": "gpqa_diamond.manifest.json",
+      "source": {
+        "dataset_name": "GPQA_DIAMOND_198",
+        "source_dataset": "fingertap/GPQA-Diamond@68be7564497676e07a77a042fdb587deb88c51c3",
+        "source_split": "test",
+        "source_fingerprint": "fb6ffc9f191b6686",
+        "seed": null,
+        "sample_count": 198,
+        "dataset_adapter_version": "publication-dataset-v2",
+        "dataset_manifest_hash": "38b763cc6148f4b2e86242e816cbe506428f8ce7e36d0a1f4bf97eb54e9e09e6"
+      },
+      "slice": [
+        0,
+        198
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Serving environment used in the paper for Qwen2.5-Instruct, xFinder-qwen1505 and
+# xVerify-0.5B-I (Python 3.11, CUDA 12.4, NVIDIA A100 80GB).
+vllm==0.6.6.post1
+torch==2.5.1
+transformers==4.47.1
+tokenizers==0.21.0
+xformers==0.0.28.post3

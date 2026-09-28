@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv*/
+.cache/
+results/
+logs/
+data/gpqa_diamond.json
+.ruff_cache/
+.pytest_cache/

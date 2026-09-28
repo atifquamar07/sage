@@ -1,0 +1,8 @@
+# xVerify correctness judge (evaluation only).
+name: xverify-0.5b-i
+hf_repo: IAAR-Shanghai/xVerify-0.5B-I
+hf_revision: 7ddfe002f965f9474c524c17f331263604b8c2da
+endpoints: [http://127.0.0.1:8400/v1]
+max_tokens: 8
+timeout: 600
+max_concurrency: 256
