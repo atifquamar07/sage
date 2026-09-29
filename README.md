@@ -1,11 +1,14 @@
+<div align="center">
+
 # Self-Adapting Group of Experts for Multi-Agent Reasoning
 
 [Mohammad Atif Quamar](https://www.atifquamar.com), [Nurbek Tastan](https://tnurbek.github.io/), [Karthik Nandakumar](https://www.cse.msu.edu/~nandakum), [Junpei Komiyama](https://jkomiyama.github.io)
 
-**SAGE** is a training-free multi-agent reasoning framework.
-It picks a *strategy donor* from the agents' own answers, transfers the donor's
-reasoning strategy into the other agents' role prompts while keeping their roles, and
-lets the agents refine their answers along a sparse, score-directed DAG.
+[![Project Page](https://img.shields.io/badge/Project-Page-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://www.atifquamar.com/sage-page) [![Code](https://img.shields.io/badge/Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/atifquamar07/sage) [![arXiv](https://img.shields.io/badge/arXiv-2609.35412-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.35412)
+
+</div>
+
+**SAGE** is a training-free multi-agent reasoning framework. It picks a *strategy donor* from the agents' own answers, transfers the donor's reasoning strategy into the other agents' role prompts while keeping their roles, and lets the agents refine their answers along a sparse, score-directed DAG.
 
 ![SAGE overview](docs/assets/sage_overview.png)
 
@@ -123,5 +126,13 @@ contains the prompt formats of xFinder and xVerify, which are licensed CC BY-NC-
 ## Citation
 
 ```bibtex
-
+@misc{quamar2026selfadaptinggroupexpertsmultiagent,
+      title={Self-Adapting Group of Experts for Multi-Agent Reasoning}, 
+      author={Mohammad Atif Quamar and Nurbek Tastan and Karthik Nandakumar and Junpei Komiyama},
+      year={2026},
+      eprint={2609.35412},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2609.35412}, 
+}
 ```
